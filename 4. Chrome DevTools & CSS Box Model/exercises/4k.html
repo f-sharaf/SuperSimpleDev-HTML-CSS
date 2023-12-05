@@ -1,0 +1,64 @@
+<style>
+    /* burda əsas məsələ paddinglərin 
+    pixel boyutlarıdı, gərək paddinglə
+    yeni yaranacaq uzunluq, ilkin uzunluqdan
+    çox olmasınkı buttonlar bir-birini 
+    itələməsin (fərziyyəmdir!) */
+    button{
+        /* main style */
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+
+        /* for transition */
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        transition: padding 0.15s,  
+            margin 0.15s;
+
+    }
+
+    button:hover{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /* mənim ilk yazdığım */
+    /* button{
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        transition: padding 0.15s,  
+            margin 0.15s;
+
+    } */
+
+    /* button:hover{
+        padding-left: 36px;
+        padding-right: 36px;
+    } */
+
+
+</style>
+<button>One</button>
+<button>Two</button>
+<button>Three</button>
