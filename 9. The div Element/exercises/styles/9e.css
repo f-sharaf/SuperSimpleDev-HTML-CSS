@@ -1,0 +1,37 @@
+.tweet {
+  padding: 10px;
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.3);
+}
+
+.profile-img {
+  width: 48px;
+  border-radius: 24px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.tweet-box {
+  font-size: 18px;
+  color: rgb(43, 42, 42);
+  border: none;
+  width: 300px;
+  vertical-align: middle;
+}
+
+.tweet-button {
+  /* font-size: 16px; ??? */
+  font-weight: bold;
+  background-color: rgb(77, 157, 255);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}

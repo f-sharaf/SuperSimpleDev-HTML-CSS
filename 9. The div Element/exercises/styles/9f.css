@@ -1,0 +1,42 @@
+div {
+    font-family: Arial;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.30);
+    width: 160px;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.friends-info {
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 10px;
+}
+
+.add-friend {
+    background-color: rgb(29, 134, 220);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 8px;
+}
