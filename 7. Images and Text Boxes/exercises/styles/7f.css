@@ -1,0 +1,35 @@
+p{
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(89, 89, 89);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.text-box{
+    width: 345px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.privacy-info{
+    margin-bottom: 20px;
+}
+
+.agree-and-join{
+    font-size: 18px;
+    background-color: rgb(56, 124, 197);
+    color: white;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 200px;
+}
