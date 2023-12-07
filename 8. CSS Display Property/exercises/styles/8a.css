@@ -1,0 +1,8 @@
+.name-box,
+.email-box {
+    display: block;
+}
+
+.name-box{
+    margin-bottom: 5px;
+}

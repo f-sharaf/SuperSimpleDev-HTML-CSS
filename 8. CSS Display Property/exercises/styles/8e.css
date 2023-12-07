@@ -1,0 +1,38 @@
+p {
+    font-family: Arial;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+input{
+    background-color: rgb(236, 236, 236);
+    color: rgb(67, 67, 67);
+    margin-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+}
+
+.pickup-location,
+.destination-location {
+    display: block;
+    width: 260px;
+}
+
+.destination-location{
+    margin-bottom: 28px;
+}
+
+.request-now,
+.schedule-later {
+    border: none;
+    padding: 15px;
+}
+
+.request-now {
+    background-color: black;
+    color: white;
+}
