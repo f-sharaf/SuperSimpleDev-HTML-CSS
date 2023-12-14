@@ -3,6 +3,12 @@
     <head>
         <title>YouTube.com Clone</title>
         <style>
+            p {
+                font-family: Roboto, Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
             .thumbnail{
                 width: 300px;
                 display: block;
@@ -13,7 +19,21 @@
             }
 
             .video-title{
-                width: 300px;
+                margin-top: 0;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 12px;
+            }
+
+            .video-author,
+            .video-stats {
+                font-size: 12px;
+                color: rgb(96, 96, 96);
+            }
+
+            .video-author {
+                margin-bottom: 4px;
             }
 
             .video-preview {
@@ -22,35 +42,87 @@
                 vertical-align: top;
                 margin-right: 15px;
             }
+
+            .channel-picture,
+            .video-info {
+                display: inline-block;
+            }
+
+            .channel-picture {
+                width: 50px;
+                vertical-align: top;
+            }
+
+            .profile-picture {
+                width: 40px;
+                border-radius: 50px;
+            }
+
+            .video-info {
+                width: 200px;
+            }
+
+            .thumbnail-row {
+                margin-bottom: 12px;
+            }
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">        
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-            <p class="video-title">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="video-author">
-                Marques Brownlee
-            </p>
-            <p class="video-stats">
-                3.4M views &middot; 6 months ago
-            </p>    
+            <!-- ilk vertical layout -->
+            <div class="thumbnail-row"> 
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </div>
+            <!-- ikinci vertical layout -->
+            <div>
+                <!-- ilk horizontal layout -->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+                </div>
+                <!-- ikinci horizontal layout -->
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+                    <p class="video-stats">
+                        3.4M views &middot; 6 months ago
+                    </p>    
+                </div>
+            </div>
         </div>
 
-
+        
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-            <p class="video-title">
-                Try Not To Laugh Challange #9
-            </p>
-            <p class="video-author">
-                Markiplier
-            </p>
-            <p class="video-stats">
-                19M views &middot; 4 years ago
-            </p>    
+            <!-- birinci vertical layout -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <!-- ikinci vertical layout -->
+            <div>
+                <!-- ilk horizontal layout -->
+                <div class="channel-picture">
+                    <img src="channel-pictures/channel-2.jpeg" class="profile-picture">
+                </div>
+                <!-- ikinci horizontal layout -->
+                <div class="video-info">
+                    <p class="video-title">
+                        Try Not To Laugh Challange #9
+                    </p>
+                    <p class="video-author">
+                        Markiplier
+                    </p>
+                    <p class="video-stats">
+                        19M views &middot; 4 years ago
+                    </p>    
+                </div>
+            </div>
         </div>
     </body>
 </html>
