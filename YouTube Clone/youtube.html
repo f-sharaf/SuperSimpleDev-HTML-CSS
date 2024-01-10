@@ -1,231 +1,220 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>YouTube.com Clone</title>
-        <style>
-            p {
-                font-family: Roboto, Arial;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+      p {
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
 
-            .thumbnail{
-                width: 100%;
-            }
-            
-            .search-bar{
-                display: block;
-            }
+      .thumbnail {
+        width: 100%;
+      }
 
-            .video-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 16px;
-                row-gap: 40px;
-            }
+      .search-bar {
+        display: block;
+      }
 
-            .video-title{
-                margin-top: 0;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 20px;
-                margin-bottom: 12px;
-            }
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
 
-            .video-author,
-            .video-stats {
-                font-size: 12px;
-                color: rgb(96, 96, 96);
-            }
+      .video-title {
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
 
-            .video-author {
-                margin-bottom: 4px;
-            }
+      .video-author,
+      .video-stats {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
 
-            .video-info-grid {
-                display: grid;
-                grid-template-columns: 50px 1fr;
-            }
+      .video-author {
+        margin-bottom: 4px;
+      }
 
-            .profile-picture {
-                width: 40px;
-                border-radius: 50px;
-            }
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
 
-            .thumbnail-row {
-                margin-bottom: 12px;
-            }
-        </style>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">        
-    </head>
-    <body>
-        <input class="search-bar" type="text" placeholder="Search">
-        <div class="video-grid">
-            <!-- preview-1 -->
-            <div class="video-preview">
-                <!-- ilk vertical layout -->
-                <div class="thumbnail-row"> 
-                    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-                </div>
-                <!-- ikinci vertical layout -->
-                <div class="video-info-grid">
-                    <!-- ilk horizontal layout -->
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
-                    </div>
-                    <!-- ikinci horizontal layout -->
-                    <div class="video-info">
-                        <p class="video-title">
-                            Talking Tech and AI with Google CEO Sundar Pichai!
-                        </p>
-                        <p class="video-author">
-                            Marques Brownlee
-                        </p>
-                        <p class="video-stats">
-                            3.4M views &middot; 6 months ago
-                        </p>    
-                    </div>
-                </div>
-            </div>
-    
-            <!-- preview-2 -->
-            <div class="video-preview">
-                <!-- birinci vertical layout -->
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-                </div>
-                <!-- ikinci vertical layout -->
-                <div class="video-info-grid">
-                    <!-- ilk horizontal layout -->
-                    <div class="channel-picture">
-                        <img src="channel-pictures/channel-2.jpeg" class="profile-picture">
-                    </div>
-                    <!-- ikinci horizontal layout -->
-                    <div class="video-info">
-                        <p class="video-title">
-                            Try Not To Laugh Challange #9
-                        </p>
-                        <p class="video-author">
-                            Markiplier
-                        </p>
-                        <p class="video-stats">
-                            19M views &middot; 4 years ago
-                        </p>    
-                    </div>
-                </div>
-            </div>
-    
-            <!-- preview-3 -->
-            <div class="video-preview">
-                <!-- ilk vertical layout -->
-                <div class="thumbnail-row"> 
-                    <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
-                </div>
-                <!-- ikinci vertical layout -->
-                <div class="video-info-grid">
-                    <!-- ilk horizontal layout -->
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-3.jpg" alt="">
-                    </div>
-                    <!-- ikinci horizontal layout -->
-                    <div class="video-info">
-                        <p class="video-title">
-                            CS50x 2023 - Lecture 3 - Algorithms
-                        </p>
-                        <p class="video-author">
-                            CS50
-                        </p>
-                        <p class="video-stats">
-                            431K views &middot; Streamed 1 year ago
-                        </p>    
-                    </div>
-                </div>
-            </div>
-    
-            <!-- preview-4 -->       
-            <div class="video-preview">
-                <!-- birinci vertical layout -->
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
-                </div>
-                <!-- ikinci vertical layout -->
-                <div class="video-info-grid">
-                    <!-- ilk horizontal layout -->
-                    <div class="channel-picture">
-                        <img src="channel-pictures/channel-4.jpg" class="profile-picture">
-                    </div>
-                    <!-- ikinci horizontal layout -->
-                    <div class="video-info">
-                        <p class="video-title">
-                            Effektiv Ünsiyyət Nədir? | Rəşad Bayramov | Söhbətgah
-                        </p>
-                        <p class="video-author">
-                            Söhbətgah
-                        </p>
-                        <p class="video-stats">
-                            5.2K views &middot; 1 day ago
-                        </p>    
-                    </div>
-                </div>
-            </div>       
-            
-            <!-- preview-5 -->        
-            <div class="video-preview">
-                <!-- ilk vertical layout -->
-                <div class="thumbnail-row"> 
-                    <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
-                </div>
-                <!-- ikinci vertical layout -->
-                <div class="video-info-grid">
-                    <!-- ilk horizontal layout -->
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="channel-pictures/channel-5.jpg" alt="">
-                    </div>
-                    <!-- ikinci horizontal layout -->
-                    <div class="video-info">
-                        <p class="video-title">
-                            Sam Altman - How to succeed with a Startup
-                        </p>
-                        <p class="video-author">
-                            Y Combinator
-                        </p>
-                        <p class="video-stats">
-                            1.1M views &middot; 5 year ago
-                        </p>    
-                    </div>
-                </div>
-            </div>
-    
-            <!-- preview-6 -->        
-            <div class="video-preview">
-                <!-- birinci vertical layout -->
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
-                </div>
-                <!-- ikinci vertical layout -->
-                <div class="video-info-grid">
-                    <!-- ilk horizontal layout -->
-                    <div class="channel-picture">
-                        <img src="channel-pictures/channel-6.jpg" class="profile-picture">
-                    </div>
-                    <!-- ikinci horizontal layout -->
-                    <div class="video-info">
-                        <p class="video-title">
-                            George Hotz | Programming | OpenCL on a 
-                            Galaxy Z Fold 5 | Android | IOCTL | GPU |
-                             arm64 | part 1
-                        </p>
-                        <p class="video-author">
-                            george hotz archive
-                        </p>
-                        <p class="video-stats">
-                            15K views &middot; 20 hours ago
-                        </p>    
-                    </div>
-                </div>
-            </div>        
+      .profile-picture {
+        width: 40px;
+        border-radius: 50px;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 12px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="video-grid">
+      <!-- preview-1 -->
+      <div class="video-preview">
+        <!-- ilk vertical layout -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
         </div>
-    </body>
+        <!-- ikinci vertical layout -->
+        <div class="video-info-grid">
+          <!-- ilk horizontal layout -->
+          <div class="channel-picture"> 
+            <img
+              class="profile-picture"
+              src="channel-pictures/channel-1.jpeg"
+              alt=""
+            />
+          </div>
+          <!-- ikinci horizontal layout -->
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- preview-2 -->
+      <div class="video-preview">
+        <!-- birinci vertical layout -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+        </div>
+        <!-- ikinci vertical layout -->
+        <div class="video-info-grid">
+          <!-- ilk horizontal layout -->
+          <div class="channel-picture">
+            <img
+              src="channel-pictures/channel-2.jpeg"
+              class="profile-picture"
+            />
+          </div>
+          <!-- ikinci horizontal layout -->
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challange #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- preview-3 -->
+      <div class="video-preview">
+        <!-- ilk vertical layout -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+        </div>
+        <!-- ikinci vertical layout -->
+        <div class="video-info-grid">
+          <!-- ilk horizontal layout -->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="channel-pictures/channel-3.jpg"
+              alt=""
+            />
+          </div>
+          <!-- ikinci horizontal layout -->
+          <div class="video-info">
+            <p class="video-title">CS50x 2023 - Lecture 3 - Algorithms</p>
+            <p class="video-author">CS50</p>
+            <p class="video-stats">431K views &middot; Streamed 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- preview-4 -->
+      <div class="video-preview">
+        <!-- birinci vertical layout -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+        </div>
+        <!-- ikinci vertical layout -->
+        <div class="video-info-grid">
+          <!-- ilk horizontal layout -->
+          <div class="channel-picture">
+            <img src="channel-pictures/channel-4.jpg" class="profile-picture" />
+          </div>
+          <!-- ikinci horizontal layout -->
+          <div class="video-info">
+            <p class="video-title">
+              Effektiv Ünsiyyət Nədir? | Rəşad Bayramov | Söhbətgah
+            </p>
+            <p class="video-author">Söhbətgah</p>
+            <p class="video-stats">5.2K views &middot; 1 day ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- preview-5 -->
+      <div class="video-preview">
+        <!-- ilk vertical layout -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+        </div>
+        <!-- ikinci vertical layout -->
+        <div class="video-info-grid">
+          <!-- ilk horizontal layout -->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="channel-pictures/channel-5.jpg"
+              alt=""
+            />
+          </div>
+          <!-- ikinci horizontal layout -->
+          <div class="video-info">
+            <p class="video-title">
+              Sam Altman - How to succeed with a Startup
+            </p>
+            <p class="video-author">Y Combinator</p>
+            <p class="video-stats">1.1M views &middot; 5 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- preview-6 -->
+      <div class="video-preview">
+        <!-- birinci vertical layout -->
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+        </div>
+        <!-- ikinci vertical layout -->
+        <div class="video-info-grid">
+          <!-- ilk horizontal layout -->
+          <div class="channel-picture">
+            <img src="channel-pictures/channel-6.jpg" class="profile-picture" />
+          </div>
+          <!-- ikinci horizontal layout -->
+          <div class="video-info">
+            <p class="video-title">
+              George Hotz | Programming | OpenCL on a Galaxy Z Fold 5 | Android
+              | IOCTL | GPU | arm64 | part 1
+            </p>
+            <p class="video-author">george hotz archive</p>
+            <p class="video-stats">15K views &middot; 20 hours ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
