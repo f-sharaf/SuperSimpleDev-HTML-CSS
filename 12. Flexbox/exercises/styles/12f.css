@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    background-color: rgb(149, 82, 205);
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.section-1 {
+    color: white;
+    width: 100px;
+}
+
+.section-2 {
+    color: gray;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 4800px;
+    max-width: 500px;
+    margin-right: 60px;
+    margin-left: 35px;
+}
+
+.section-3 {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}

@@ -1,0 +1,28 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.counter {
+    color: white;
+    background-color: rgb(28, 153, 255);
+    border-radius: 24px;
+    padding: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
