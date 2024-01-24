@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.email-box {
+    width: 500px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    margin-right: 8px;
+}
+
+.profile-img {
+    height: 48px;
+    border-radius: 24px;
+}
+
+.email-info {
+    line-height: 20px;
+}
+
+.box-1 {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.username,
+.title {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 13px;
+}
+
+.time,
+.message {
+    color: grey;
+}
+
+.title,
+.message {
+    font-size: 15px;
+}

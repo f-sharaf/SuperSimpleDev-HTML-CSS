@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexbox-container {
+    display: flex; 
+    width: 420px;
+}
+
+.profile-photo {
+    margin-right: 15px;
+}
+
+.profile-img {
+    height: 64px;
+    border-radius: 32px;
+}
+
+.tweet-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.tag {
+    color: rgb(116, 116, 116);
+}
+
+.tweet {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.external-link {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.thumbnail-photo {
+    width: 180px;
+    height: 100px;
+    background-color: rgb(212, 212, 212);
+}
+
+.link-info {
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.youtube-link {
+    color: rgb(116, 116, 116);
+    margin-bottom: 4px;
+}

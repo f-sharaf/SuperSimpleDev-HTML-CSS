@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+}
+
+.section-1 {
+    width: 100px;
+    height: 50px;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-1 {
+    background-color: black;
+    color: white;
+}
+
+.section-2 {
+    width: 200px;
+    background-color: lightblue;
+}
