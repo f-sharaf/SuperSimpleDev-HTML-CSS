@@ -1,0 +1,41 @@
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-container {
+    position: relative;
+    display: inline-block;
+}
+
+.promo {
+    font-family: Arial;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px;
+}
+
+.button-background {
+    background-color: rgba(220, 206, 206, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(232, 224, 215);
+    color: black;
+    border: solid 1px black;
+    padding: 10px 15px 10px 15px;
+}
