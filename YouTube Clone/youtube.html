@@ -23,17 +23,26 @@
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg" />
-        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
         <div class="notifications-icon-container">
           <img class="notifications-icon" src="icons/notifications.svg" />
           <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
         </div>
         <img
           class="current-user-picture"
@@ -43,31 +52,71 @@
       </div>
     </div>
 
-    <div class="sidebar">sidebar</div>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="">
+        <div>Library</div>
+      </div>
+    </div>
 
     <div class="video-grid">
       <!-- preview-1 -->
       <div class="video-preview">
         <!-- ilk vertical layout -->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          </a>
           <div class="video-time">14:20</div>
         </div>
         <!-- ikinci vertical layout -->
         <div class="video-info-grid">
           <!-- ilk horizontal layout -->
           <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="channel-pictures/channel-1.jpeg"
-              alt=""
-            />
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@mkbhd">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg"/>
+              </a> 
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg"/>
+                <div class="channel-tooltip-info">
+                    <div class="channel-tooltip-name">
+                      Marques Brownlee
+                    </div>
+                    <div class="channel-tooltip-sub">
+                      18.6M subscribers
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ikinci horizontal layout -->
           <div class="video-info">
-            <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
             <p class="video-author">Marques Brownlee</p>
             <p class="video-stats">3.4M views &middot; 6 months ago</p>
           </div>
@@ -78,21 +127,40 @@
       <div class="video-preview">
         <!-- birinci vertical layout -->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+          </a>
           <div class="video-time">8:22</div>
         </div>
         <!-- ikinci vertical layout -->
         <div class="video-info-grid">
           <!-- ilk horizontal layout -->
           <div class="channel-picture">
-            <img
-              src="channel-pictures/channel-2.jpeg"
-              class="profile-picture"
-            />
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@markiplier">
+                <img
+                src="channel-pictures/channel-2.jpeg"
+                class="profile-picture"
+              />
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-pictures/channel-2.jpeg"/>
+                <div class="channel-tooltip-info">
+                    <div class="channel-tooltip-name">
+                      Markiplier
+                    </div>
+                    <div class="channel-tooltip-sub">
+                      36.5M subscribers
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ikinci horizontal layout -->
           <div class="video-info">
-            <p class="video-title">Try Not To Laugh Challange #9</p>
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <p class="video-title">Try Not To Laugh Challange #9</p>
+            </a>
             <p class="video-author">Markiplier</p>
             <p class="video-stats">19M views &middot; 4 years ago</p>
           </div>
@@ -103,22 +171,40 @@
       <div class="video-preview">
         <!-- ilk vertical layout -->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+          <a href="https://www.youtube.com/watch?v=4oqjcKenCH8">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+          </a>
           <div class="video-time">2:01:36</div>
         </div>
         <!-- ikinci vertical layout -->
         <div class="video-info-grid">
           <!-- ilk horizontal layout -->
           <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="channel-pictures/channel-3.jpg"
-              alt=""
-            />
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/cs50">
+                <img
+                class="profile-picture"
+                src="channel-pictures/channel-3.jpg"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-pictures/channel-3.jpg"/>
+                <div class="channel-tooltip-info">
+                    <div class="channel-tooltip-name">
+                      CS50
+                    </div>
+                    <div class="channel-tooltip-sub">
+                      1.79M subscribers
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ikinci horizontal layout -->
           <div class="video-info">
-            <p class="video-title">CS50x 2023 - Lecture 3 - Algorithms</p>
+            <a href="https://www.youtube.com/watch?v=4oqjcKenCH8">
+              <p class="video-title">CS50x 2023 - Lecture 3 - Algorithms</p>
+            </a>
             <p class="video-author">CS50</p>
             <p class="video-stats">431K views &middot; Streamed 1 year ago</p>
           </div>
@@ -129,20 +215,39 @@
       <div class="video-preview">
         <!-- birinci vertical layout -->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+          <a href="https://www.youtube.com/watch?v=9Z5dDcCjjBw">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+          </a>
           <div class="video-time">1:10:12</div>
         </div>
         <!-- ikinci vertical layout -->
         <div class="video-info-grid">
           <!-- ilk horizontal layout -->
           <div class="channel-picture">
-            <img src="channel-pictures/channel-4.jpg" class="profile-picture" />
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@Sohbatgah">
+                <img src="channel-pictures/channel-4.jpg" class="profile-picture" />
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-pictures/channel-4.jpg"/>
+                <div class="channel-tooltip-info">
+                    <div class="channel-tooltip-name">
+                      Söhbətgah
+                    </div>
+                    <div class="channel-tooltip-sub">
+                      56.6K subscribers
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ikinci horizontal layout -->
           <div class="video-info">
-            <p class="video-title">
-              Effektiv Ünsiyyət Nədir? | Rəşad Bayramov | Söhbətgah
-            </p>
+            <a href="https://www.youtube.com/watch?v=9Z5dDcCjjBw">
+              <p class="video-title">
+                Effektiv Ünsiyyət Nədir? | Rəşad Bayramov | Söhbətgah
+              </p>
+            </a>
             <p class="video-author">Söhbətgah</p>
             <p class="video-stats">5.2K views &middot; 1 day ago</p>
           </div>
@@ -153,24 +258,42 @@
       <div class="video-preview">
         <!-- ilk vertical layout -->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
-          <div class="video-time">16:07</div>
+          <a href="https://www.youtube.com/watch?v=0lJKucu6HJc">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+          </a>
+          <div class="video-time">16:07</div> 
         </div>
         <!-- ikinci vertical layout -->
         <div class="video-info-grid">
           <!-- ilk horizontal layout -->
           <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="channel-pictures/channel-5.jpg"
-              alt=""
-            />
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@ycombinator">
+                <img
+                class="profile-picture"
+                src="channel-pictures/channel-5.jpg"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-pictures/channel-5.jpg"/>
+                <div class="channel-tooltip-info">
+                    <div class="channel-tooltip-name">
+                      Y Combinator
+                    </div>
+                    <div class="channel-tooltip-sub">
+                      1.3M subscribers
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ikinci horizontal layout -->
           <div class="video-info">
-            <p class="video-title">
-              Sam Altman - How to succeed with a Startup
-            </p>
+            <a href="https://www.youtube.com/watch?v=0lJKucu6HJc"> 
+              <p class="video-title">
+                Sam Altman - How to succeed with a Startup
+              </p>
+            </a>
             <p class="video-author">Y Combinator</p>
             <p class="video-stats">1.1M views &middot; 5 year ago</p>
           </div>
@@ -181,21 +304,40 @@
       <div class="video-preview">
         <!-- birinci vertical layout -->
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+          <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+          </a>
           <div class="video-time">5:16:43</div>
         </div>
         <!-- ikinci vertical layout -->
         <div class="video-info-grid">
           <!-- ilk horizontal layout -->
           <div class="channel-picture">
-            <img src="channel-pictures/channel-6.jpg" class="profile-picture" />
+            <div class="profile-picture-container">
+              <a href="https://www.youtube.com/@geohotarchive"> 
+                <img src="channel-pictures/channel-6.jpg" class="profile-picture" />
+              </a>
+              <div class="channel-tooltip">
+                <img class="channel-tooltip-picture" src="channel-pictures/channel-6.jpg"/>
+                <div class="channel-tooltip-info">
+                    <div class="channel-tooltip-name">
+                      george hotz archive
+                      </div>
+                    <div class="channel-tooltip-sub">
+                      189K subscribers
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ikinci horizontal layout -->
           <div class="video-info">
-            <p class="video-title">
-              George Hotz | Programming | OpenCL on a Galaxy Z Fold 5 | Android
-              | IOCTL | GPU | arm64 | part 1
-            </p>
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <p class="video-title">
+                George Hotz | Programming | OpenCL on a Galaxy Z Fold 5 | Android
+                | IOCTL | GPU | arm64 | part 1
+              </p>
+            </a>
             <p class="video-author">george hotz archive</p>
             <p class="video-stats">15K views &middot; 20 hours ago</p>
           </div>
