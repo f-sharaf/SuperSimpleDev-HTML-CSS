@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="hambuger-menu" src="icons/hamburger-menu.svg" />
         <img class="youtube-logo" src="icons/youtube-logo.svg" />
@@ -25,6 +25,7 @@
           <img class="search-icon" src="icons/search.svg" />
           <div class="tooltip">Search</div>
         </button>
+        <!-- Put position absolute inside position relative -->
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
           <div class="tooltip">Search with your voice</div>
@@ -50,9 +51,9 @@
           alt=""
         />
       </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="icons/home.svg" alt="">
         <div>Home</div>
@@ -77,272 +78,532 @@
         <img src="icons/library.svg" alt="">
         <div>Library</div>
       </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
-      <!-- preview-1 -->
-      <div class="video-preview">
-        <!-- ilk vertical layout -->
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
-          </a>
-          <div class="video-time">14:20</div>
-        </div>
-        <!-- ikinci vertical layout -->
-        <div class="video-info-grid">
-          <!-- ilk horizontal layout -->
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@mkbhd">
-                <img class="profile-picture" src="channel-pictures/channel-1.jpeg"/>
-              </a> 
-              <div class="channel-tooltip">
-                <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg"/>
-                <div class="channel-tooltip-info">
-                    <div class="channel-tooltip-name">
-                      Marques Brownlee
-                    </div>
-                    <div class="channel-tooltip-sub">
-                      18.6M subscribers
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ikinci horizontal layout -->
-          <div class="video-info">
+    <main>
+      <section class="video-grid">
+        <!-- preview-1 -->
+        <div class="video-preview">
+          <!-- ilk vertical layout -->
+          <div class="thumbnail-row">
             <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-              <p class="video-title">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-              </p>
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
             </a>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats">3.4M views &middot; 6 months ago</p>
+            <div class="video-time">14:20</div>
           </div>
-        </div>
-      </div>
-
-      <!-- preview-2 -->
-      <div class="video-preview">
-        <!-- birinci vertical layout -->
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
-          </a>
-          <div class="video-time">8:22</div>
-        </div>
-        <!-- ikinci vertical layout -->
-        <div class="video-info-grid">
-          <!-- ilk horizontal layout -->
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@markiplier">
-                <img
-                src="channel-pictures/channel-2.jpeg"
-                class="profile-picture"
-              />
-              </a>
-              <div class="channel-tooltip">
-                <img class="channel-tooltip-picture" src="channel-pictures/channel-2.jpeg"/>
-                <div class="channel-tooltip-info">
-                    <div class="channel-tooltip-name">
-                      Markiplier
-                    </div>
-                    <div class="channel-tooltip-sub">
-                      36.5M subscribers
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ikinci horizontal layout -->
-          <div class="video-info">
-            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
-              <p class="video-title">Try Not To Laugh Challange #9</p>
-            </a>
-            <p class="video-author">Markiplier</p>
-            <p class="video-stats">19M views &middot; 4 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- preview-3 -->
-      <div class="video-preview">
-        <!-- ilk vertical layout -->
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=4oqjcKenCH8">
-            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
-          </a>
-          <div class="video-time">2:01:36</div>
-        </div>
-        <!-- ikinci vertical layout -->
-        <div class="video-info-grid">
-          <!-- ilk horizontal layout -->
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/cs50">
-                <img
-                class="profile-picture"
-                src="channel-pictures/channel-3.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img class="channel-tooltip-picture" src="channel-pictures/channel-3.jpg"/>
-                <div class="channel-tooltip-info">
-                    <div class="channel-tooltip-name">
-                      CS50
-                    </div>
-                    <div class="channel-tooltip-sub">
-                      1.79M subscribers
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ikinci horizontal layout -->
-          <div class="video-info">
-            <a href="https://www.youtube.com/watch?v=4oqjcKenCH8">
-              <p class="video-title">CS50x 2023 - Lecture 3 - Algorithms</p>
-            </a>
-            <p class="video-author">CS50</p>
-            <p class="video-stats">431K views &middot; Streamed 1 year ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- preview-4 -->
-      <div class="video-preview">
-        <!-- birinci vertical layout -->
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=9Z5dDcCjjBw">
-            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
-          </a>
-          <div class="video-time">1:10:12</div>
-        </div>
-        <!-- ikinci vertical layout -->
-        <div class="video-info-grid">
-          <!-- ilk horizontal layout -->
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@Sohbatgah">
-                <img src="channel-pictures/channel-4.jpg" class="profile-picture" />
-              </a>
-              <div class="channel-tooltip">
-                <img class="channel-tooltip-picture" src="channel-pictures/channel-4.jpg"/>
-                <div class="channel-tooltip-info">
-                    <div class="channel-tooltip-name">
-                      Söhbətgah
-                    </div>
-                    <div class="channel-tooltip-sub">
-                      56.6K subscribers
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ikinci horizontal layout -->
-          <div class="video-info">
-            <a href="https://www.youtube.com/watch?v=9Z5dDcCjjBw">
-              <p class="video-title">
-                Effektiv Ünsiyyət Nədir? | Rəşad Bayramov | Söhbətgah
-              </p>
-            </a>
-            <p class="video-author">Söhbətgah</p>
-            <p class="video-stats">5.2K views &middot; 1 day ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- preview-5 -->
-      <div class="video-preview">
-        <!-- ilk vertical layout -->
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=0lJKucu6HJc">
-            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
-          </a>
-          <div class="video-time">16:07</div> 
-        </div>
-        <!-- ikinci vertical layout -->
-        <div class="video-info-grid">
-          <!-- ilk horizontal layout -->
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@ycombinator">
-                <img
-                class="profile-picture"
-                src="channel-pictures/channel-5.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img class="channel-tooltip-picture" src="channel-pictures/channel-5.jpg"/>
-                <div class="channel-tooltip-info">
-                    <div class="channel-tooltip-name">
-                      Y Combinator
-                    </div>
-                    <div class="channel-tooltip-sub">
-                      1.3M subscribers
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ikinci horizontal layout -->
-          <div class="video-info">
-            <a href="https://www.youtube.com/watch?v=0lJKucu6HJc"> 
-              <p class="video-title">
-                Sam Altman - How to succeed with a Startup
-              </p>
-            </a>
-            <p class="video-author">Y Combinator</p>
-            <p class="video-stats">1.1M views &middot; 5 year ago</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- preview-6 -->
-      <div class="video-preview">
-        <!-- birinci vertical layout -->
-        <div class="thumbnail-row">
-          <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
-            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
-          </a>
-          <div class="video-time">5:16:43</div>
-        </div>
-        <!-- ikinci vertical layout -->
-        <div class="video-info-grid">
-          <!-- ilk horizontal layout -->
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@geohotarchive"> 
-                <img src="channel-pictures/channel-6.jpg" class="profile-picture" />
-              </a>
-              <div class="channel-tooltip">
-                <img class="channel-tooltip-picture" src="channel-pictures/channel-6.jpg"/>
-                <div class="channel-tooltip-info">
-                    <div class="channel-tooltip-name">
-                      george hotz archive
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@mkbhd">
+                  <img class="profile-picture" src="channel-pictures/channel-1.jpeg"/>
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Marques Brownlee
                       </div>
-                    <div class="channel-tooltip-sub">
-                      189K subscribers
-                    </div>
+                      <div class="channel-tooltip-sub">
+                        18.6M subscribers
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- ikinci horizontal layout -->
-          <div class="video-info">
-            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
-              <p class="video-title">
-                George Hotz | Programming | OpenCL on a Galaxy Z Fold 5 | Android
-                | IOCTL | GPU | arm64 | part 1
-              </p>
-            </a>
-            <p class="video-author">george hotz archive</p>
-            <p class="video-stats">15K views &middot; 20 hours ago</p>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+              </a>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4M views &middot; 6 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+  
+        <!-- preview-2 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@markiplier">
+                  <img
+                  src="channel-pictures/channel-2.jpg"
+                  class="profile-picture"
+                />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-2.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Lex Fridman
+                      </div>
+                      <div class="channel-tooltip-sub">
+                        3.81M subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                <p class="video-title">Sam Altman: OpenAI, GPT-5, Sora, Board Saga, Elon Musk, Ilya, Power & AGI | Lex Fridman Podcast #419</p>
+              </a>
+              <p class="video-author">Lex Fridman</p>
+              <p class="video-stats">1.1M views &middot; 2 days ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- preview-3 -->
+        <div class="video-preview">
+          <!-- ilk vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=4oqjcKenCH8">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+            </a>
+            <div class="video-time">2:01:36</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/cs50">
+                  <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-3.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-3.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        CS50
+                      </div>
+                      <div class="channel-tooltip-sub">
+                        1.79M subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=4oqjcKenCH8">
+                <p class="video-title">CS50x 2023 - Lecture 3 - Algorithms</p>
+              </a>
+              <p class="video-author">CS50</p>
+              <p class="video-stats">431K views &middot; Streamed 1 year ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- preview-4 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=9Z5dDcCjjBw">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+            </a>
+            <div class="video-time">1:10:12</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@Sohbatgah">
+                  <img src="channel-pictures/channel-4.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-4.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Söhbətgah
+                      </div>
+                      <div class="channel-tooltip-sub">
+                        56.6K subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=9Z5dDcCjjBw">
+                <p class="video-title">
+                  Effektiv Ünsiyyət Nədir? | Rəşad Bayramov | Söhbətgah
+                </p>
+              </a>
+              <p class="video-author">Söhbətgah</p>
+              <p class="video-stats">5.2K views &middot; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- preview-5 -->
+        <div class="video-preview">
+          <!-- ilk vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=0lJKucu6HJc">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+            </a>
+            <div class="video-time">16:07</div> 
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@ycombinator">
+                  <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-5.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-5.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Y Combinator
+                      </div>
+                      <div class="channel-tooltip-sub">
+                        1.3M subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=0lJKucu6HJc"> 
+                <p class="video-title">
+                  Sam Altman - How to succeed with a Startup
+                </p>
+              </a>
+              <p class="video-author">Y Combinator</p>
+              <p class="video-stats">1.1M views &middot; 5 year ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- preview-6 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+            </a>
+            <div class="video-time">5:16:43</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-6.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-6.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        george hotz archive
+                        </div>
+                      <div class="channel-tooltip-sub">
+                        189K subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  George Hotz | Programming | OpenCL on a Galaxy Z Fold 5 | Android
+                  | IOCTL | GPU | arm64 | part 1
+                </p>
+              </a>
+              <p class="video-author">george hotz archive</p>
+              <p class="video-stats">15K views &middot; 20 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- preview-7 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+            </a>
+            <div class="video-time">10:18</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-7.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-7.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        jvscholz
+                        </div>
+                      <div class="channel-tooltip-sub">
+                        229K subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  week in the life of digital minimalist
+                </p>
+              </a>
+              <p class="video-author">jvscholz</p>
+              <p class="video-stats">152K views &middot; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- preview-8 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+            </a>
+            <div class="video-time">7:50</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-8.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-8.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Marko
+                        </div>
+                      <div class="channel-tooltip-sub">
+                        200K subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  A Day in The Life of a Software Engineer (ep. 45)
+                </p>
+              </a>
+              <p class="video-author">Marko</p>
+              <p class="video-stats">1.7K views &middot; 52 minutes ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- preview-9 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.webp" />
+            </a>
+            <div class="video-time">31:22</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-9.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-9.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Veritasium
+                        </div>
+                      <div class="channel-tooltip-sub">
+                        15.2M subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  The Trillion Dollar Equation
+                </p>
+              </a>
+              <p class="video-author">Veritasium</p>
+              <p class="video-stats">6.2M views &middot; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- preview-10 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.webp" />
+            </a>
+            <div class="video-time">2:34</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-10.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-10.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Lyrical Lemonade
+                      </div>
+                      <div class="channel-tooltip-sub">
+                        21.9M subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  Eminem - Doomsday 2 (Directed by Cole Bennett)
+                </p>
+              </a>
+              <p class="video-author">Lyrical Lemonade</p>
+              <p class="video-stats">5.8M views &middot; 7 days ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- preview-11 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.webp" />
+            </a>
+            <div class="video-time">1:00:34</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-11.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-11.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Syntax
+                        </div>
+                      <div class="channel-tooltip-sub">
+                        352K subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  Set up a Mac in 2024 for Power Users and Developers
+                </p>
+              </a>
+              <p class="video-author">Syntax</p>
+              <p class="video-stats">109K views &middot; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- preview-12 -->
+        <div class="video-preview">
+          <!-- birinci vertical layout -->
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.webp" />
+            </a>
+            <div class="video-time">5:16:43</div>
+          </div>
+          <!-- ikinci vertical layout -->
+          <div class="video-info-grid">
+            <!-- ilk horizontal layout -->
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@geohotarchive"> 
+                  <img src="channel-pictures/channel-12.jpg" class="profile-picture" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-12.jpg"/>
+                  <div class="channel-tooltip-info">
+                      <div class="channel-tooltip-name">
+                        Sony Pictures Entertainment
+                        </div>
+                      <div class="channel-tooltip-sub">
+                        7.08M subscribers
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ikinci horizontal layout -->
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ogOmQ86y0es">
+                <p class="video-title">
+                  SICARIO: DAY OF THE SOLDADO - Official Trailer (HD)
+                </p>
+              </a>
+              <p class="video-author">Sony Pictures Entertainmet</p>
+              <p class="video-stats">16M views &middot; 6 years ago</p>
+            </div>
+          </div>
+        </div>        
+      </section>
+    </main>
   </body>
 </html>
